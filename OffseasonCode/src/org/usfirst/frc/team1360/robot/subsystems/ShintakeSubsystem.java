@@ -1,0 +1,25 @@
+package org.usfirst.frc.team1360.robot.subsystems;
+
+import org.usfirst.frc.team1360.robot.RobotMap;
+
+import edu.wpi.first.wpilibj.Victor;
+import edu.wpi.first.wpilibj.command.Subsystem;
+
+/**
+ *
+ */
+public class ShintakeSubsystem extends Subsystem {
+    
+    private final Victor SHINTAKE_MOTOR = new Victor(RobotMap.INTAKE_MOTOR);
+    
+    public void intakeOutake(double speed)
+    {
+    	SHINTAKE_MOTOR.set(speed);
+    }
+
+    public void initDefaultCommand() {
+        // Set the default command for a subsystem here.
+        //setDefaultCommand(new MySpecialCommand());
+    }
+}
+

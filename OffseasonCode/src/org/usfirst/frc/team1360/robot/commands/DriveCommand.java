@@ -24,6 +24,7 @@ public class DriveCommand extends Command {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	Subsystems.DRIVE_SUBSYSTEM.arcadeDrive(OI.getDriverThrottle(), OI.getDriverTurn());
+    	Subsystems.DRIVE_SUBSYSTEM.activateSolenoid(OI.getDriverRearTilt());
     }
 
     // Make this return true when this Command no longer needs to run execute()
