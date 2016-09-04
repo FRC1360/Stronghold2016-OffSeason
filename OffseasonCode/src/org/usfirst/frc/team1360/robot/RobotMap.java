@@ -16,5 +16,10 @@ public class RobotMap {
 	
 	public static final int INTAKE_MOTOR = 4;
 	
+	public static final int PIVOTSUBSYSTEM_TILTER = 5;
+	
+	public static final int SHOOTERSUBSYSTEM_SWITCH_DOWN = 1;
+    public static final int SHOOTERSUBSYSTEM_SWITCH_UP = 2;
+	
 	public static final int DRIVE_SOLENOID = 0;
 }

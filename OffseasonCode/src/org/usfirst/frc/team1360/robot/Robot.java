@@ -8,6 +8,7 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 
 import org.usfirst.frc.team1360.robot.commands.DriveCommand;
 import org.usfirst.frc.team1360.robot.commands.ExampleCommand;
+import org.usfirst.frc.team1360.robot.commands.PivotCommand;
 import org.usfirst.frc.team1360.robot.commands.ShintakeCommand;
 import org.usfirst.frc.team1360.robot.subsystems.ExampleSubsystem;
 import org.usfirst.frc.team1360.robot.util.Subsystems;
@@ -32,11 +33,13 @@ public class Robot extends IterativeRobot {
     
     private static DriveCommand driveCommand;
     private static ShintakeCommand shintakeCommand;
+    private static PivotCommand pivotCommand;
 
     private void init()
     {
     	driveCommand.start();
     	shintakeCommand.start();
+    	pivotCommand.start();
     }
     
     /**
@@ -53,6 +56,7 @@ public class Robot extends IterativeRobot {
         new Subsystems();
         driveCommand = new DriveCommand();
         shintakeCommand = new ShintakeCommand();
+        pivotCommand = new PivotCommand();
     }
 	
 	/**

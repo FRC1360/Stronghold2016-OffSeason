@@ -1,7 +1,5 @@
 package org.usfirst.frc.team1360.robot;
 
-import edu.wpi.first.wpilibj.buttons.Button;
-import org.usfirst.frc.team1360.robot.commands.ExampleCommand;
 import org.usfirst.frc.team1360.robot.util.Xbox360Controller;
 
 /**
