@@ -35,6 +35,10 @@ public class PivotSubsystem extends Subsystem {
     	{
     		PIVOT_MOTOR.set(Joystick);
     	}
+    	else
+    	{
+    		PIVOT_MOTOR.set(0);
+    	}
     }
     
     
